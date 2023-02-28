@@ -138,16 +138,16 @@ section.strategies__section .container__section .container__strategies .display_
 }
 section.strategies__section .container__section .container__strategies .display__strategies .content__strategies .info__strategies .title__strategies {
   font-weight: 600;
-  font-size: 1.75rem;
-  line-height: 1.875rem;
+  font-size: 1.25rem;
+  line-height: 1.25rem;
   text-align: center;
   color: #FFF;
   margin-bottom: 18.45px;
 }
 section.strategies__section .container__section .container__strategies .display__strategies .content__strategies .info__strategies .description__strategies {
   font-weight: 400;
-  font-size: 1.25rem;
-  line-height: 25px;
+  font-size: 0.9rem;
+  line-height: 1rem;
   align-items: center;
   color: #FFF;
   text-align: center;
