@@ -1,0 +1,128 @@
+&.section__footer {
+        background-color: #060606;
+
+        .section__footer__header {
+            .icon__svg {
+                text-align: center;
+            }
+
+            h1 {
+                font-weight: 400;
+                font-size: 32px;
+                line-height: 35px;
+                text-align: center;
+                max-width: 566px;
+                margin: 0 auto;
+                color: #FFF;
+                margin-top: 46px;
+            }
+            
+            p {
+                font-weight: 300;
+                font-size: 22px;
+                line-height: 33px;
+                text-align: center;
+                max-width: 709px;
+                margin: 0 auto;
+                color: #FFF;
+                margin-top: 1.3rem;
+            }
+        }
+
+        .section__footer__call__action {
+            max-width: 849px;
+            margin: 0 auto;
+            background-color: $primary;
+            border-radius: 50px;
+
+            a {
+                text-decoration: none;
+                color: #060606;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 1rem;
+                padding: 11px 0;
+                margin-top: 3.75rem;
+
+                @media screen and (max-width: 576px) {
+                    flex-direction: column;
+                    text-align: center;
+                }
+
+                p {
+                    font-weight: 400;
+                    font-size: 32px;
+                    line-height: 35px;
+                    color: #060606;
+                }
+            }
+        }
+
+        hr {
+            height: 2px;
+            background-color: $primary;
+            margin: 3rem 0;
+        }
+
+        .section__footer__contact {
+            .display__section__footer__contact {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                justify-content: center;
+
+                @media screen and (max-width: 992px) {
+
+                }
+                
+                @media screen and (max-width: 768px) {
+                    
+                }
+                
+                @media screen and (max-width: 576px) {
+                    grid-template-columns: 1fr;
+                }
+
+                .info__section__footer__contact {
+                    text-decoration: none;
+                    color: #FFF;
+
+                    h4 {
+                        font-weight: 400;
+                        font-size: 32px;
+                        line-height: 40px;
+                    }
+
+                    p {
+                        font-weight: 300;
+                        font-size: 24px;
+                        line-height: 36px;
+                        max-width: 411px;
+                        
+                    }
+                }
+
+                .contact {
+                    .display__contact {
+                        display: flex;
+                        align-items: center;
+                        gap: 1rem;
+                        margin-bottom: 1rem;
+
+
+                        a {
+                            font-weight: 400;
+                            font-size: 1.5rem;
+                            line-height: 40px;
+                            color: #FFF;
+                            text-decoration: none;
+
+                            @media screen and (max-width: 576px) {
+                                font-size: 1rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
