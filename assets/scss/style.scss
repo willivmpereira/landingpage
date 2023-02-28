@@ -160,6 +160,10 @@ section {
                         position: relative;
                         height: 100%;
 
+                        @media screen and (max-width: 576px) {
+                            padding-top: 4rem;
+                        }
+
                         &::before{
                             content: '';
                             position: absolute;
@@ -194,6 +198,33 @@ section {
                         &:last-of-type {
                             &::after{
                                 display: none;
+                            }
+                        }
+
+                        @media screen and (max-width: 576px) {
+                            &::before{
+                                content: '';
+                                position: absolute;
+                                width: 80px;
+                                height: 30px;
+                                background-color: #000;
+                                left: 50%;
+                                top: 0;
+                                transform: translateX(-50%);
+                                clip-path: polygon(50% 100%, 0 0, 100% 0);
+                            }
+
+                            &::after{
+                                content: '';
+                                position: absolute;
+                                width: 80px;
+                                height: 30px;
+                                background-color: #212121;
+                                left: 50%;
+                                bottom: -28px;
+                                transform: translateX(-50%);
+                                clip-path: polygon(50% 100%, 0 0, 100% 0);
+                                z-index: 1;
                             }
                         }
 
@@ -246,11 +277,19 @@ section {
                     justify-content: center;
                     gap: 2.5rem;
 
+                    @media screen and (max-width: 576px) {
+                        flex-direction: column;
+                    }
+
                     .expert{
 
                         .img__expert {
+                            max-width: 100%;
+                            height: auto;
+
                             filter: grayscale(1);
                             transition: all 0.75s ease-in-out;
+
                             &:hover {
                                 filter: grayscale(0);
                             }
@@ -272,7 +311,7 @@ section {
                                 }
 
                                 &.second {
-                                    color: #25D366
+                                    color: $primary
                                 }
                             }
 

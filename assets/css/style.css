@@ -204,6 +204,11 @@ section.how__works .container__section .container__how__works .display__how__wor
   position: relative;
   height: 100%;
 }
+@media screen and (max-width: 576px) {
+  section.how__works .container__section .container__how__works .display__how__works .content__how__works {
+    padding-top: 4rem;
+  }
+}
 section.how__works .container__section .container__how__works .display__how__works .content__how__works::before {
   content: "";
   position: absolute;
@@ -232,6 +237,31 @@ section.how__works .container__section .container__how__works .display__how__wor
 }
 section.how__works .container__section .container__how__works .display__how__works .content__how__works:last-of-type::after {
   display: none;
+}
+@media screen and (max-width: 576px) {
+  section.how__works .container__section .container__how__works .display__how__works .content__how__works::before {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 30px;
+    background-color: #000;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    clip-path: polygon(50% 100%, 0 0, 100% 0);
+  }
+  section.how__works .container__section .container__how__works .display__how__works .content__how__works::after {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 30px;
+    background-color: #212121;
+    left: 50%;
+    bottom: -28px;
+    transform: translateX(-50%);
+    clip-path: polygon(50% 100%, 0 0, 100% 0);
+    z-index: 1;
+  }
 }
 section.how__works .container__section .container__how__works .display__how__works .content__how__works .icon__how__works {
   background-color: #DECE84;
@@ -276,7 +306,14 @@ section.how__works .container__section .experts__how__works .display__experts {
   justify-content: center;
   gap: 2.5rem;
 }
+@media screen and (max-width: 576px) {
+  section.how__works .container__section .experts__how__works .display__experts {
+    flex-direction: column;
+  }
+}
 section.how__works .container__section .experts__how__works .display__experts .expert .img__expert {
+  max-width: 100%;
+  height: auto;
   filter: grayscale(1);
   transition: all 0.75s ease-in-out;
 }
@@ -298,7 +335,7 @@ section.how__works .container__section .experts__how__works .display__experts .e
   color: #DECE84;
 }
 section.how__works .container__section .experts__how__works .display__experts .expert .expert__info h4.second {
-  color: #25D366;
+  color: #DECE84;
 }
 section.how__works .container__section .experts__how__works .display__experts .expert .expert__info span {
   font-weight: 400;
