@@ -174,7 +174,7 @@ section.how__works {
   background: url(../images/stoke_logo.png) #000000;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center 200px;
 }
 section.how__works .container__section .title__how__works {
   font-weight: 400;
