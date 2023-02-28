@@ -35,6 +35,7 @@ body {
 img {
   max-width: 100%;
   height: auto;
+  width: 100%;
 }
 
 nav {
@@ -373,6 +374,12 @@ section.rating__google .container__section .header__rating__google .title__ratin
   color: #FFF;
   max-width: 367px;
 }
+@media screen and (max-width: 576px) {
+  section.rating__google .container__section .header__rating__google .title__rating__google h1 {
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+  }
+}
 section.rating__google .container__section .container__rating__google {
   max-width: 1140px;
   margin: 0 auto;
@@ -384,6 +391,7 @@ section.rating__google .container__section .container__rating__google .display__
 }
 section.rating__google .container__section .container__rating__google .display__rating__google .content__rating__google {
   max-width: 300px;
+  margin: 0 auto;
 }
 section.rating__google .container__section .container__rating__google .display__rating__google .content__rating__google .icon__rating__google {
   display: flex;
@@ -547,8 +555,9 @@ footer .footer .logo__footer {
 }
 @media screen and (max-width: 576px) {
   footer .footer .logo__footer {
+    margin: 0 auto;
     text-align: center;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
   }
 }
 footer .footer .info__footer {
@@ -604,4 +613,33 @@ footer .copy {
 footer .copy p {
   color: #FFF;
   text-align: center;
+}
+
+.whatsapp__button {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  z-index: 10;
+}
+.whatsapp__button a {
+  text-decoration: none;
+}
+.whatsapp__button a .content__whatsapp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.whatsapp__button a .content__whatsapp .box__info {
+  background-color: #E8E8E8;
+  border-radius: 17px;
+  max-width: 350px;
+  padding: 14px;
+  text-align: center;
+}
+.whatsapp__button a .content__whatsapp .box__info h4 {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  color: #060606;
 }/*# sourceMappingURL=style.css.map */

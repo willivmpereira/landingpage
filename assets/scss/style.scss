@@ -35,6 +35,7 @@ body {
 img {
     max-width: 100%;
     height: auto;
+    width: 100%;
 }
 
 nav {
@@ -377,12 +378,12 @@ footer {
         padding: 65px 0;
 
         .logo__footer {
-
             max-width: 243px;
 
             @media screen and (max-width: 576px) {
+                margin: 0 auto;
                 text-align: center;
-                margin-bottom: 1rem;
+                margin-bottom: 2rem;
             }
         }
 
@@ -442,6 +443,40 @@ footer {
         p {
             color: #FFF;
             text-align: center;
+        }
+    }
+}
+
+.whatsapp__button {
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    z-index: 10;
+
+    a {
+        text-decoration: none;
+
+        .content__whatsapp {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+    
+            .box__info {
+                background-color: #E8E8E8;
+                border-radius: 17px;
+                max-width: 350px;
+                padding: 14px;
+                text-align: center;
+    
+                h4 {
+                    font-weight: 400;
+                    font-size: 1rem;
+                    line-height: 1.25rem;
+                    color: #060606;
+                }
+            }
+            
         }
     }
 }
