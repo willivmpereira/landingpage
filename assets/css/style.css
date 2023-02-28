@@ -197,7 +197,7 @@ section.how__works .container__section .container__how__works .display__how__wor
 section.how__works .container__section .container__how__works .display__how__works .content__how__works {
   display: grid;
   background-color: #212121;
-  padding: 10px 37px 79px 37px;
+  padding: 20px 37px 29px 37px;
   margin-top: 2rem;
   max-width: 412px;
   border-radius: 19px;
@@ -280,12 +280,12 @@ section.how__works .container__section .container__how__works .display__how__wor
   line-height: 1.5rem;
   text-align: center;
   margin-top: 20px;
-  margin-bottom: 60px;
+  margin-bottom: 15px;
 }
 section.how__works .container__section .container__how__works .display__how__works .content__how__works p {
   font-weight: 400;
   font-size: 0.9rem;
-  line-height: 1rem;
+  line-height: 1.25rem;
   text-align: center;
   color: #FFF;
 }
