@@ -414,8 +414,59 @@
           </div>
         </a>
       </div>
+      <div id="google-reviews"></div>
     </main>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD-V0x_MBh1oq-fmaaJEh1eH5I0cLeauZc&callback=initMap&libraries=places"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="./assets/js/main.js"></script>
+
+    
+
+<!-- <script>
+  function initMap() {
+    var map = new google.maps.Map(document.getElementById('map'), {
+      center: {lat: -34.397, lng: 150.644},
+      zoom: 15
+    });
+  
+    var service = new google.maps.places.PlacesService(map);
+  
+    service.getDetails({
+      placeId: 'ChIJG21PaQYbFgcRivS1Q-dA5eE'
+    }, function(place, status) {
+      if (status === google.maps.places.PlacesServiceStatus.OK) {
+        var reviews = place.reviews;
+        for (var i = 0; i < reviews.length; i++) {
+          var rating = reviews[i].rating;
+          var author_name = reviews[i].author_name;
+          var text = reviews[i].text;
+  
+          var review_div = document.createElement('div');
+          review_div.innerHTML = '<h4>' + author_name + '</h4>' + '<p>' + text + '</p>';
+          document.getElementById('google-reviews').appendChild(review_div);
+        }
+      }
+    });
+  }
+  </script> -->
+
+<script>
+  function initMap() {
+    var map = new google.maps.Map(document.getElementById('map'), {
+      center: {lat: -34.397, lng: 150.644},
+      zoom: 15
+    });
+  
+    var service = new google.maps.places.PlacesService(map);
+  
+    service.getDetails({
+      placeId: 'ChIJG21PaQYbFgcRivS1Q'
+    }, function(place, status) {
+      if (status === google.maps.places.PlacesServiceStatus.OK) {
+        console.log(place.place_id);
+      }
+    });
+  }
+  </script>
   </body>
 </html>
