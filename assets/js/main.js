@@ -121,11 +121,13 @@ for (let item of testimonials) {
 
 
 var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 'auto',
     spaceBetween: 40,
-    centeredSlides: true,
     grabCursor: true,
+    autoplay: {
+      delay: 4000,
+    },
     loop: true,
+    slidesPerView: 3,
     pagination: {
       el: ".swiper-pagination",
       clickable: true,

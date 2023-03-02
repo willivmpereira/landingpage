@@ -57,7 +57,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("../images/background_header.jpg");
+  background-image: url("../images/background_header.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
