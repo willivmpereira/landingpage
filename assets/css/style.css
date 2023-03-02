@@ -39,7 +39,7 @@ img {
 }
 
 nav {
-  padding: 2rem;
+  padding: 1rem;
   background-color: #DECE84;
 }
 nav .display__nav {
@@ -48,7 +48,7 @@ nav .display__nav {
   align-items: center;
 }
 nav .display__nav img {
-  max-width: 429px;
+  max-width: 300px;
 }
 
 header {
@@ -132,7 +132,7 @@ section.strategies__section .container__section .container__strategies .display_
   margin: 3.9375rem 0;
   box-shadow: 10px 20px 15px rgba(0, 0, 0, 0.25);
 }
-section.strategies__section .container__section .container__strategies .display__strategies .content__strategies:nth-of-type(even) {
+section.strategies__section .container__section .container__strategies .display__strategies .content__strategies:nth-of-type(odd) {
   background-color: #212121;
 }
 section.strategies__section .container__section .container__strategies .display__strategies .content__strategies .icon__strategies {
@@ -154,9 +154,8 @@ section.strategies__section .container__section .container__strategies .display_
   margin-bottom: 18.45px;
 }
 section.strategies__section .container__section .container__strategies .display__strategies .content__strategies .info__strategies .description__strategies {
-  font-weight: 400;
+  font-weight: 300;
   font-size: 0.9rem;
-  line-height: 1rem;
   align-items: center;
   color: #FFF;
   text-align: center;
@@ -250,6 +249,12 @@ section.how__works .container__section .container__how__works .display__how__wor
 section.how__works .container__section .container__how__works .display__how__works .content__how__works:last-of-type::after {
   display: none;
 }
+section.how__works .container__section .container__how__works .display__how__works .content__how__works:nth-of-type(even) {
+  background-color: #141414;
+}
+section.how__works .container__section .container__how__works .display__how__works .content__how__works:nth-of-type(even):after {
+  background-color: #141414;
+}
 @media screen and (max-width: 576px) {
   section.how__works .container__section .container__how__works .display__how__works .content__how__works::before {
     content: "";
@@ -295,9 +300,8 @@ section.how__works .container__section .container__how__works .display__how__wor
   margin-bottom: 15px;
 }
 section.how__works .container__section .container__how__works .display__how__works .content__how__works p {
-  font-weight: 400;
+  font-weight: 300;
   font-size: 0.9rem;
-  line-height: 1.25rem;
   text-align: center;
   color: #FFF;
 }
@@ -307,7 +311,7 @@ section.how__works .container__section .experts__how__works {
 section.how__works .container__section .experts__how__works h2 {
   color: #FFF;
   font-weight: 400;
-  font-size: 32px;
+  font-size: 1.5rem;
   line-height: 48px;
   text-align: center;
 }
@@ -327,7 +331,7 @@ section.how__works .container__section .experts__how__works .display__experts .e
   max-width: 100%;
   height: auto;
   filter: grayscale(1);
-  transition: all 0.75s ease-in-out;
+  transition: all 0.3s ease-out;
 }
 section.how__works .container__section .experts__how__works .display__experts .expert .img__expert:hover {
   filter: grayscale(0);
@@ -434,14 +438,15 @@ section.testimonials .swiper-wrapper {
   align-items: center !important;
 }
 section.testimonials .swiper-slide {
-  width: 200px !important;
-  height: 250px !important;
+  max-width: 426px !important;
+  width: 100%;
+  height: 200px !important;
   border-radius: 7px !important;
 }
-section.testimonials .swiper-slide img {
-  width: 200px !important;
-  height: 250px !important;
-  border-radius: 7px !important;
+@media screen and (max-width: 576px) {
+  section.testimonials .swiper-slide {
+    width: 250px !important;
+  }
 }
 section.section__footer {
   background-color: #060606;
@@ -470,10 +475,10 @@ section.section__footer .section__footer__header p {
   margin-top: 1.3rem;
 }
 section.section__footer .section__footer__call__action {
-  max-width: 849px;
   margin: 0 auto;
   background-color: #DECE84;
   border-radius: 50px;
+  max-width: 435px;
 }
 section.section__footer .section__footer__call__action a {
   text-decoration: none;
@@ -493,7 +498,7 @@ section.section__footer .section__footer__call__action a {
 }
 section.section__footer .section__footer__call__action a p {
   font-weight: 400;
-  font-size: 32px;
+  font-size: 1rem;
   line-height: 35px;
   color: #060606;
 }
@@ -518,12 +523,12 @@ section.section__footer .section__footer__contact .display__section__footer__con
 }
 section.section__footer .section__footer__contact .display__section__footer__contact .info__section__footer__contact h4 {
   font-weight: 400;
-  font-size: 32px;
+  font-size: 1.5rem;
   line-height: 40px;
 }
 section.section__footer .section__footer__contact .display__section__footer__contact .info__section__footer__contact p {
   font-weight: 300;
-  font-size: 24px;
+  font-size: 1.5rem;
   line-height: 36px;
   max-width: 411px;
 }
@@ -531,19 +536,14 @@ section.section__footer .section__footer__contact .display__section__footer__con
   display: flex;
   align-items: center;
   gap: 1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.75rem;
 }
 section.section__footer .section__footer__contact .display__section__footer__contact .contact .display__contact a {
   font-weight: 400;
-  font-size: 1.5rem;
+  font-size: 1rem;
   line-height: 40px;
   color: #FFF;
   text-decoration: none;
-}
-@media screen and (max-width: 576px) {
-  section.section__footer .section__footer__contact .display__section__footer__contact .contact .display__contact a {
-    font-size: 1rem;
-  }
 }
 
 footer .footer {
@@ -573,9 +573,11 @@ footer .footer .info__footer a {
   text-decoration: none;
   color: #FFF;
   font-weight: 300;
-  font-size: 22px;
+  font-size: 1.15rem;
   line-height: 33px;
   max-width: 620px;
+  display: inline-block;
+  margin-top: 1rem;
 }
 @media screen and (max-width: 576px) {
   footer .footer .info__footer a {
@@ -642,4 +644,40 @@ footer .copy p {
   font-size: 1rem;
   line-height: 1.25rem;
   color: #060606;
+}
+
+#oi {
+  background-color: #FFF;
+  display: grid;
+  gap: 0.5rem;
+  padding: 1rem;
+  max-width: 426px;
+  border-radius: 9px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+}
+#oi .info__pessoa {
+  display: flex;
+  gap: 0.5rem;
+}
+#oi .info__pessoa .photo {
+  height: 35px;
+  width: 35px;
+  border-radius: 10rem;
+}
+#oi .info__pessoa .info__name {
+  display: grid;
+}
+#oi .info__pessoa .info__name p {
+  font-size: 0.7rem;
+  margin-bottom: 0;
+}
+#oi .info__pessoa .info__name span {
+  margin-top: 0;
+  font-size: 0.5rem;
+}
+#oi .stars p {
+  font-size: 0.5rem;
+}
+#oi .description p {
+  font-size: 0.85rem;
 }/*# sourceMappingURL=style.css.map */

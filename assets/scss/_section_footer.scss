@@ -30,10 +30,10 @@
         }
 
         .section__footer__call__action {
-            max-width: 849px;
             margin: 0 auto;
             background-color: $primary;
             border-radius: 50px;
+            max-width: 435px;
 
             a {
                 text-decoration: none;
@@ -52,7 +52,7 @@
 
                 p {
                     font-weight: 400;
-                    font-size: 32px;
+                    font-size: 1rem;
                     line-height: 35px;
                     color: #060606;
                 }
@@ -89,13 +89,13 @@
 
                     h4 {
                         font-weight: 400;
-                        font-size: 32px;
+                        font-size: 1.5rem;
                         line-height: 40px;
                     }
 
                     p {
                         font-weight: 300;
-                        font-size: 24px;
+                        font-size: 1.5rem;
                         line-height: 36px;
                         max-width: 411px;
                         
@@ -107,19 +107,15 @@
                         display: flex;
                         align-items: center;
                         gap: 1rem;
-                        margin-bottom: 1rem;
+                        margin-bottom: .75rem;
 
 
                         a {
                             font-weight: 400;
-                            font-size: 1.5rem;
+                            font-size: 1rem;
                             line-height: 40px;
                             color: #FFF;
                             text-decoration: none;
-
-                            @media screen and (max-width: 576px) {
-                                font-size: 1rem;
-                            }
                         }
                     }
                 }
