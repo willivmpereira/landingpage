@@ -1,4 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+.title__page {
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 3rem;
+  color: #FFF;
+  text-align: center;
+  margin-bottom: 3px;
+}
+
+.description__page {
+  font-weight: 300;
+  font-size: 1rem;
+  color: #FFF;
+  text-align: center;
+  max-width: 709px;
+  margin: 0 auto;
+  margin-bottom: 89px;
+  padding: 0 15px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -41,10 +61,6 @@ img {
 
 .remove-scroll {
   overflow: hidden;
-}
-
-.swiper-pagination-bullet-active {
-  background-color: #212121 !important;
 }
 
 nav {
@@ -190,24 +206,6 @@ section.how__works {
   background-repeat: no-repeat;
   background-position: center 200px;
 }
-section.how__works .container__section .title__how__works {
-  font-weight: 400;
-  font-size: 2rem;
-  line-height: 3rem;
-  color: #FFF;
-  text-align: center;
-  margin-bottom: 3px;
-}
-section.how__works .container__section .description__how__works {
-  font-weight: 300;
-  font-size: 1.25rem;
-  color: #FFF;
-  text-align: center;
-  max-width: 709px;
-  margin: 0 auto;
-  margin-bottom: 89px;
-  padding: 0 15px;
-}
 section.how__works .container__section .container__how__works .display__how__works {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -239,11 +237,6 @@ section.how__works .container__section .container__how__works .display__how__wor
   border-radius: 19px;
   position: relative;
   height: 100%;
-}
-@media screen and (max-width: 576px) {
-  section.how__works .container__section .container__how__works .display__how__works .content__how__works {
-    padding-top: 4rem;
-  }
 }
 section.how__works .container__section .container__how__works .display__how__works .content__how__works::before {
   content: "";
@@ -280,7 +273,39 @@ section.how__works .container__section .container__how__works .display__how__wor
 section.how__works .container__section .container__how__works .display__how__works .content__how__works:nth-of-type(even):after {
   background-color: #141414;
 }
+@media screen and (max-width: 768px) {
+  section.how__works .container__section .container__how__works .display__how__works .content__how__works:nth-child(1) {
+    background-color: #212121 !important;
+  }
+  section.how__works .container__section .container__how__works .display__how__works .content__how__works:nth-of-type(2) {
+    background-color: #141414 !important;
+  }
+  section.how__works .container__section .container__how__works .display__how__works .content__how__works:nth-child(3) {
+    background-color: #141414 !important;
+  }
+  section.how__works .container__section .container__how__works .display__how__works .content__how__works:nth-child(4) {
+    background-color: #212121 !important;
+  }
+  section.how__works .container__section .container__how__works .display__how__works .content__how__works:nth-of-type(even) {
+    background-color: #212121;
+  }
+  section.how__works .container__section .container__how__works .display__how__works .content__how__works:nth-of-type(even):after {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 30px;
+    background-color: #141414;
+    left: 50%;
+    bottom: -28px;
+    transform: translateX(-50%);
+    clip-path: polygon(50% 100%, 0 0, 100% 0);
+    z-index: 1;
+  }
+}
 @media screen and (max-width: 576px) {
+  section.how__works .container__section .container__how__works .display__how__works .content__how__works {
+    padding-top: 4rem;
+  }
   section.how__works .container__section .container__how__works .display__how__works .content__how__works::before {
     content: "";
     position: absolute;
@@ -456,21 +481,51 @@ section.testimonials {
   padding: 120px 0;
   background-color: #DECE84;
 }
-section.testimonials .swiper-container {
-  height: 350px !important;
-}
-section.testimonials .swiper-wrapper {
-  align-items: center !important;
-}
-section.testimonials .swiper-slide {
-  max-width: 426px !important;
+section.testimonials .main {
+  max-width: 1140px;
   width: 100%;
-  height: 200px !important;
-  border-radius: 7px !important;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+section.testimonials .main .testimonial__content {
+  background-color: #FFF;
+  display: grid;
+  gap: 0.5rem;
+  padding: 1rem;
+  max-width: 426px;
+  min-height: 188px;
+  height: 100%;
+  margin: 16px auto;
+  border-radius: 9px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+}
+section.testimonials .main .testimonial__content .info__pessoa {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+section.testimonials .main .testimonial__content .info__pessoa .photo {
+  height: 35px;
+  width: 35px;
+  border-radius: 10rem;
+}
+section.testimonials .main .testimonial__content .info__pessoa .info__name {
+  display: grid;
+}
+section.testimonials .main .testimonial__content .info__pessoa .info__name p {
+  font-size: 0.7rem;
+  margin-bottom: 0;
+}
+section.testimonials .main .testimonial__content .info__pessoa .info__name span {
+  margin-top: 0;
+  font-size: 0.5rem;
+}
+section.testimonials .main .testimonial__content .description p {
+  font-size: 0.85rem;
 }
 @media screen and (max-width: 576px) {
-  section.testimonials .swiper-slide {
-    width: 250px !important;
+  section.testimonials .main {
+    padding: 0;
   }
 }
 section.faq {
@@ -493,8 +548,9 @@ section.faq .container__faq .faq__content {
   border-bottom: 1px solid #DECE84;
 }
 section.faq .container__faq .faq__content h3 {
+  cursor: pointer;
   color: #FFF;
-  font-weight: 600;
+  font-weight: 400;
   margin: 0 65px 0 0;
 }
 section.faq .container__faq .faq__content p {
@@ -559,32 +615,30 @@ section.section__footer .section__footer__header p {
   color: #FFF;
   margin-top: 1.3rem;
 }
-section.section__footer .section__footer__call__action {
+section.section__footer .button__call {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section.section__footer .button__call .section__footer__call__action {
   margin: 0 auto;
   background-color: #DECE84;
   border-radius: 50px;
-  max-width: 435px;
+  display: inline-block;
+  margin-top: 3.75rem;
 }
-section.section__footer .section__footer__call__action a {
+section.section__footer .button__call .section__footer__call__action a {
   text-decoration: none;
   color: #060606;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 1rem;
-  padding: 11px 0;
-  margin-top: 3.75rem;
+  padding: 11px 16px;
 }
-@media screen and (max-width: 576px) {
-  section.section__footer .section__footer__call__action a {
-    flex-direction: column;
-    text-align: center;
-  }
-}
-section.section__footer .section__footer__call__action a p {
+section.section__footer .button__call .section__footer__call__action a p {
   font-weight: 400;
   font-size: 1rem;
-  line-height: 35px;
   color: #060606;
 }
 section.section__footer hr {
@@ -788,40 +842,4 @@ footer .copy p {
   font-size: 1rem;
   line-height: 1.25rem;
   color: #060606;
-}
-
-#oi {
-  background-color: #FFF;
-  display: grid;
-  gap: 0.5rem;
-  padding: 1rem;
-  max-width: 426px;
-  border-radius: 9px;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
-}
-#oi .info__pessoa {
-  display: flex;
-  gap: 0.5rem;
-}
-#oi .info__pessoa .photo {
-  height: 35px;
-  width: 35px;
-  border-radius: 10rem;
-}
-#oi .info__pessoa .info__name {
-  display: grid;
-}
-#oi .info__pessoa .info__name p {
-  font-size: 0.7rem;
-  margin-bottom: 0;
-}
-#oi .info__pessoa .info__name span {
-  margin-top: 0;
-  font-size: 0.5rem;
-}
-#oi .stars p {
-  font-size: 0.5rem;
-}
-#oi .description p {
-  font-size: 0.85rem;
 }/*# sourceMappingURL=style.css.map */

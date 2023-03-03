@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
-$primary: #DECE84;
+@import "_variables.scss";
 
 * {
     margin: 0;
@@ -41,10 +41,6 @@ img {
 
 .remove-scroll {
     overflow: hidden;
-}
-
-.swiper-pagination-bullet-active {
-    background-color: #212121 !important;
 }
 
 nav {
@@ -135,22 +131,10 @@ section {
 
         .container__section {
             .title__how__works {
-                font-weight: 400;
-                font-size: 2rem;
-                line-height: 3rem;
-                color: #FFF;
-                text-align: center;
-                margin-bottom: 3px;
+                
             }
             .description__how__works {
-                font-weight: 300;
-                font-size: 1.25rem;
-                color: #FFF;
-                text-align: center;
-                max-width: 709px;
-                margin: 0 auto;
-                margin-bottom: 89px;
-                padding: 0 15px;
+                
             }
 
             .container__how__works {
@@ -175,17 +159,13 @@ section {
 
                     .content__how__works {
                         display: grid;
-                        background-color: #212121;
+                        background-color: $secondary;
                         padding: 20px 37px 29px 37px;
                         margin-top: 2rem;
                         max-width: 412px;
                         border-radius: 19px;
                         position: relative;
                         height: 100%;
-
-                        @media screen and (max-width: 576px) {
-                            padding-top: 4rem;
-                        }
 
                         &::before{
                             content: '';
@@ -204,7 +184,7 @@ section {
                             position: absolute;
                             width: 30px;
                             height: 80px;
-                            background-color: #212121;
+                            background-color: $secondary;
                             right: -29px;
                             bottom: 50%;
                             transform: translateY(50%);
@@ -227,18 +207,48 @@ section {
                         }
 
                         &:nth-of-type(even) {
-                            background-color: #141414;
+                            background-color: $black;
 
                             &:after {
-                                background-color: #141414;
+                                background-color: $black;
                             }
                         }
 
                         @media screen and (max-width: 768px) {
                             
+                            &:nth-child(1) {
+                                background-color: $secondary !important;
+                            }
+                            &:nth-of-type(2) {
+                                background-color: $black !important;
+                            }
+                            &:nth-child(3) {
+                                background-color: $black !important;
+                            }
+                            &:nth-child(4) {
+                                background-color: $secondary !important;
+                            }
+
+                            &:nth-of-type(even) {
+                                background-color: $secondary;
+                                &:after {
+                                    content: "";
+                                    position: absolute;
+                                    width: 80px;
+                                    height: 30px;
+                                    background-color: $black;
+                                    left: 50%;
+                                    bottom: -28px;
+                                    transform: translateX(-50%);
+                                    clip-path: polygon(50% 100%, 0 0, 100% 0);
+                                    z-index: 1;
+                                }
+                            }
                         }
 
                         @media screen and (max-width: 576px) {
+                            padding-top: 4rem;
+
                             &::before{
                                 content: '';
                                 position: absolute;
@@ -256,7 +266,7 @@ section {
                                 position: absolute;
                                 width: 80px;
                                 height: 30px;
-                                background-color: #212121;
+                                background-color: $secondary;
                                 left: 50%;
                                 bottom: -28px;
                                 transform: translateX(-50%);
@@ -331,7 +341,7 @@ section {
                         }
                         
                         .expert__info {
-                            background-color: #212121;
+                            background-color: $secondary;
                             padding: 33px 5rem;
                             text-align: center;
 
@@ -370,24 +380,62 @@ section {
     &.testimonials {
         padding: 120px 0;
         background-color: $primary;
-
-        .swiper-container{
-            height: 350px !important;
-        }
-        .swiper-wrapper{
-            align-items: center !important;
-        }
-        .swiper-slide{
-            max-width: 426px !important;
+          
+        .main {
+            max-width: 1140px;
             width: 100%;
-            height: 200px !important;
-            border-radius: 7px !important;
+            margin: 0 auto;
+            padding: 0 15px;
 
-            @media screen and (max-width: 576px){
-                width: 250px !important;
+            .testimonial__content {
+                background-color: #FFF;
+                display: grid;
+                gap: 0.5rem;
+                padding: 1rem;
+                max-width: 426px;
+                min-height: 188px;
+                height: 100%;
+                margin: 16px auto;
+                border-radius: 9px;
+                box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+            
+                .info__pessoa {
+                    display: flex;
+                    gap: .5rem;
+                    margin-bottom: 0.75rem;
+            
+                    .photo {
+                        height: 35px;
+                        width: 35px;
+                        border-radius: 10rem;
+                    }
+                    .info__name {
+                        display: grid;
+            
+                        p {
+                            font-size: 0.7rem;
+                            margin-bottom: 0;
+                        }
+                        span {
+                            margin-top: 0;
+                            font-size: 0.5rem;
+                        }
+                    }
+                }
+            
+                .description {
+                    p {
+                        font-size: 0.85rem;
+                    }
+                }
+            }
+            
+
+            @media screen and (max-width: 576px) {
+                padding: 0;
             }
         }
-       
+
     }
 
     &.faq {
@@ -412,8 +460,9 @@ section {
                 border-bottom: 1px solid $primary;
 
                 h3 {
+                    cursor: pointer;
                     color: #FFF;
-                    font-weight: 600;
+                    font-weight: 400;
                     margin: 0 65px 0 0;
                 }
 
@@ -533,7 +582,7 @@ section {
  
 
     .modal__policy{
-        background: #212121;
+        background: $secondary;
         border-radius: 5px;
         padding: 0 2.4rem 2.4rem 2.4rem;
         position: relative;
@@ -550,7 +599,7 @@ section {
             display: flex;
             align-items: center;
             justify-content: space-between;
-            background-color: #212121;
+            background-color: $secondary;
             
             h2 {
                 color: #FFF;
@@ -564,7 +613,7 @@ section {
                 width: 40px;
 
                 svg {
-                    background-color: #212121;
+                    background-color: $secondary;
                 }
             }
         }
@@ -589,7 +638,7 @@ section {
 footer {
     
     .footer{
-        background: #212121;
+        background: $secondary;
         padding: 65px 0;
 
         .logo__footer {
@@ -701,50 +750,6 @@ footer {
                 }
             }
             
-        }
-    }
-}
-
-#oi {
-    background-color: #FFF;
-    display: grid;
-    gap: 0.5rem;
-    padding: 1rem;
-    max-width: 426px;
-    border-radius: 9px;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
-
-    .info__pessoa {
-        display: flex;
-        gap: .5rem;
-
-        .photo {
-            height: 35px;
-            width: 35px;
-            border-radius: 10rem;
-        }
-        .info__name {
-            display: grid;
-
-            p {
-                font-size: 0.7rem;
-                margin-bottom: 0;
-            }
-            span {
-                margin-top: 0;
-                font-size: 0.5rem;
-            }
-        }
-    }
-
-    .stars {
-        p {
-            font-size: 0.5rem;
-        }
-    }
-    .description {
-        p {
-            font-size: 0.85rem;
         }
     }
 }
