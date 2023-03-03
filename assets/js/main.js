@@ -136,3 +136,25 @@ var swiper = new Swiper(".mySwiper", {
 
 
 
+const modal = {
+  open() {
+    console.log('oi')
+    document.querySelector('.modal__overlay').classList.add('active')
+    document.querySelector('body').classList.add('remove-scroll')
+
+
+  },
+  close() {
+    document.querySelector('.modal__overlay').classList.remove('active')
+    document.querySelector('body').classList.remove('remove-scroll')
+
+  }
+}
+
+const buttons = document.querySelectorAll(".button__ask");
+
+buttons.forEach((button) => {
+  button.addEventListener("click", () =>
+    button.parentElement.classList.toggle("active")
+  );
+});
