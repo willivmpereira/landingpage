@@ -64,7 +64,7 @@ for (let item of testimonials) {
             <div class="d-grid">
               <div class="info__pessoa">
                 <div class="photo">
-                  <img src="${item.img}" alt="Foto de ${item.name}"/>
+                  <img src="${item.img}" width="35" height="35" alt="Foto de ${item.name}"/>
                 </div>
                 <div class="info__name">
                   <p>${item.name}</p>

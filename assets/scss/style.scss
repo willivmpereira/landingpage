@@ -44,7 +44,7 @@ img {
 }
 
 nav {
-    padding: 1rem;
+    padding: 1.75rem;
     background-color: $primary;
 
     .display__nav {
@@ -621,9 +621,12 @@ section {
         .modal__description {
             h4 {
                 color: #FFF;
+                font-weight: 400;
+                font-size: 1.25rem;
             }
             p {
                 color: #FFF;
+                font-size: 0.9rem;
             }
         }
     }

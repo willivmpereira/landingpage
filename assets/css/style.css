@@ -64,7 +64,7 @@ img {
 }
 
 nav {
-  padding: 1rem;
+  padding: 1.75rem;
   background-color: #DECE84;
 }
 nav .display__nav {
@@ -728,9 +728,12 @@ section.section__footer .section__footer__contact .display__section__footer__con
 }
 .modal__overlay .modal__policy .modal__description h4 {
   color: #FFF;
+  font-weight: 400;
+  font-size: 1.25rem;
 }
 .modal__overlay .modal__policy .modal__description p {
   color: #FFF;
+  font-size: 0.9rem;
 }
 .modal__overlay.active {
   opacity: 1;
