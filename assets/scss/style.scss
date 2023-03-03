@@ -644,6 +644,12 @@ footer {
                     border: solid 1px $primary;
                     margin-bottom: 1rem;
                     display: inline-block;
+                    transition: 0.3s ease-in;
+
+                    &:hover {
+                        background-color: $primary;
+                        color: #000;
+                    }
                 }
             }
         }

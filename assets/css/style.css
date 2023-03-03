@@ -734,6 +734,11 @@ footer .footer .info__footer .buttons button {
   border: solid 1px #DECE84;
   margin-bottom: 1rem;
   display: inline-block;
+  transition: 0.3s ease-in;
+}
+footer .footer .info__footer .buttons button:hover {
+  background-color: #DECE84;
+  color: #000;
 }
 footer .copy {
   background-color: #000;
