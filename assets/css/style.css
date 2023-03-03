@@ -174,9 +174,14 @@ section.strategies__section .container__section .container__strategies .display_
     margin-bottom: 2rem;
   }
 }
+@media screen and (max-width: 768px) {
+  section.strategies__section .container__section .container__strategies .display__strategies {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 @media screen and (max-width: 576px) {
   section.strategies__section .container__section .container__strategies .display__strategies {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 section.how__works {
@@ -201,6 +206,7 @@ section.how__works .container__section .description__how__works {
   max-width: 709px;
   margin: 0 auto;
   margin-bottom: 89px;
+  padding: 0 15px;
 }
 section.how__works .container__section .container__how__works .display__how__works {
   display: grid;
@@ -209,9 +215,19 @@ section.how__works .container__section .container__how__works .display__how__wor
   align-items: center;
   gap: 0.75rem;
 }
+@media screen and (max-width: 992px) {
+  section.how__works .container__section .container__how__works .display__how__works {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 768px) {
+  section.how__works .container__section .container__how__works .display__how__works {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 @media screen and (max-width: 576px) {
   section.how__works .container__section .container__how__works .display__how__works {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 section.how__works .container__section .container__how__works .display__how__works .content__how__works {
@@ -479,7 +495,7 @@ section.faq .container__faq .faq__content {
 section.faq .container__faq .faq__content h3 {
   color: #FFF;
   font-weight: 600;
-  margin: 0 35px 0 0;
+  margin: 0 65px 0 0;
 }
 section.faq .container__faq .faq__content p {
   margin: 30px 0 0;
@@ -589,16 +605,12 @@ section.section__footer .section__footer__contact .display__section__footer__con
 section.section__footer .section__footer__contact .display__section__footer__contact .info__section__footer__contact {
   text-decoration: none;
   color: #FFF;
+  margin-bottom: 1rem;
 }
 section.section__footer .section__footer__contact .display__section__footer__contact .info__section__footer__contact h4 {
   font-weight: 400;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   line-height: 40px;
-}
-section.section__footer .section__footer__contact .display__section__footer__contact .info__section__footer__contact p {
-  font-weight: 300;
-  font-size: 1.5rem;
-  line-height: 36px;
   max-width: 411px;
 }
 section.section__footer .section__footer__contact .display__section__footer__contact .contact .display__contact {

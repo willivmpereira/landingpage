@@ -150,6 +150,7 @@ section {
                 max-width: 709px;
                 margin: 0 auto;
                 margin-bottom: 89px;
+                padding: 0 15px;
             }
 
             .container__how__works {
@@ -161,15 +162,15 @@ section {
                     gap: .75rem;
 
                     @media screen and (max-width: 992px) {
-
+                        grid-template-columns: repeat(2, 1fr);
                     }
 
                     @media screen and (max-width: 768px) {
-                        
+                        grid-template-columns: repeat(2, 1fr);
                     }
 
                     @media screen and (max-width: 576px) {
-                        grid-template-columns: 1fr;
+                        grid-template-columns: repeat(1, 1fr)
                     }
 
                     .content__how__works {
@@ -231,6 +232,10 @@ section {
                             &:after {
                                 background-color: #141414;
                             }
+                        }
+
+                        @media screen and (max-width: 768px) {
+                            
                         }
 
                         @media screen and (max-width: 576px) {
@@ -409,7 +414,7 @@ section {
                 h3 {
                     color: #FFF;
                     font-weight: 600;
-                    margin: 0 35px 0 0;
+                    margin: 0 65px 0 0;
                 }
 
                 p {
