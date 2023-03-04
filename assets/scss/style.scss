@@ -130,13 +130,6 @@ section {
         background-position: center 200px;
 
         .container__section {
-            .title__how__works {
-                
-            }
-            .description__how__works {
-                
-            }
-
             .container__how__works {
                 .display__how__works {
                     display: grid;
@@ -459,7 +452,7 @@ section {
                 overflow: hidden;
                 border-bottom: 1px solid $primary;
 
-                h3 {
+                h4 {
                     cursor: pointer;
                     color: #FFF;
                     font-weight: 400;

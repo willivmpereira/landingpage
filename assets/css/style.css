@@ -547,7 +547,7 @@ section.faq .container__faq .faq__content {
   overflow: hidden;
   border-bottom: 1px solid #DECE84;
 }
-section.faq .container__faq .faq__content h3 {
+section.faq .container__faq .faq__content h4 {
   cursor: pointer;
   color: #FFF;
   font-weight: 400;

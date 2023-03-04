@@ -134,7 +134,7 @@ const modal = {
   }
 }
 
-const buttons = document.querySelectorAll(".button__ask");
+const buttons = document.querySelectorAll(".open__ask");
 
 buttons.forEach((button) => {
   button.addEventListener("click", () =>
