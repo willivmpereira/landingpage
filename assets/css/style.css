@@ -391,16 +391,11 @@ section.how__works .container__section .experts__how__works .display__experts .e
   padding: 33px 5rem;
   text-align: center;
 }
-section.how__works .container__section .experts__how__works .display__experts .expert .expert__info h4 {
+section.how__works .container__section .experts__how__works .display__experts .expert .expert__info p {
   font-weight: 600;
   font-size: 24px;
   line-height: 25px;
   text-transform: uppercase;
-}
-section.how__works .container__section .experts__how__works .display__experts .expert .expert__info h4.frist {
-  color: #DECE84;
-}
-section.how__works .container__section .experts__how__works .display__experts .expert .expert__info h4.second {
   color: #DECE84;
 }
 section.how__works .container__section .experts__how__works .display__experts .expert .expert__info span {
