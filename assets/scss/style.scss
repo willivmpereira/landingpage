@@ -131,6 +131,11 @@ section {
 
         .container__section {
             .container__how__works {
+
+                @media screen and (max-width: 576px){
+                    padding: 0 16px;
+                }
+
                 .display__how__works {
                     display: grid;
                     grid-template-columns: repeat(4, 1fr);
@@ -207,37 +212,6 @@ section {
                             }
                         }
 
-                        @media screen and (max-width: 768px) {
-                            
-                            &:nth-child(1) {
-                                background-color: $secondary !important;
-                            }
-                            &:nth-of-type(2) {
-                                background-color: $black !important;
-                            }
-                            &:nth-child(3) {
-                                background-color: $black !important;
-                            }
-                            &:nth-child(4) {
-                                background-color: $secondary !important;
-                            }
-
-                            &:nth-of-type(even) {
-                                background-color: $secondary;
-                                &:after {
-                                    content: "";
-                                    position: absolute;
-                                    width: 80px;
-                                    height: 30px;
-                                    background-color: $black;
-                                    left: 50%;
-                                    bottom: -28px;
-                                    transform: translateX(-50%);
-                                    clip-path: polygon(50% 100%, 0 0, 100% 0);
-                                    z-index: 1;
-                                }
-                            }
-                        }
 
                         @media screen and (max-width: 576px) {
                             padding-top: 4rem;
@@ -418,7 +392,7 @@ section {
             
 
             @media screen and (max-width: 576px) {
-                padding: 0;
+                padding: 0 2rem;
             }
         }
 

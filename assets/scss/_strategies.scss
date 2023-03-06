@@ -12,7 +12,9 @@
         }
 
         .container__strategies {
-            
+            @media screen and (max-width: 576px){
+                padding: 0 16px;
+            }
 
             .display__strategies {
                 display: grid;

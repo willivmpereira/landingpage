@@ -139,6 +139,11 @@ section.strategies__section .container__section .strategies__title {
   text-align: center;
   margin-bottom: 2.625rem;
 }
+@media screen and (max-width: 576px) {
+  section.strategies__section .container__section .container__strategies {
+    padding: 0 16px;
+  }
+}
 section.strategies__section .container__section .container__strategies .display__strategies {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -200,6 +205,11 @@ section.how__works {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center 200px;
+}
+@media screen and (max-width: 576px) {
+  section.how__works .container__section .container__how__works {
+    padding: 0 16px;
+  }
 }
 section.how__works .container__section .container__how__works .display__how__works {
   display: grid;
@@ -267,35 +277,6 @@ section.how__works .container__section .container__how__works .display__how__wor
 }
 section.how__works .container__section .container__how__works .display__how__works .content__how__works:nth-of-type(even):after {
   background-color: #141414;
-}
-@media screen and (max-width: 768px) {
-  section.how__works .container__section .container__how__works .display__how__works .content__how__works:nth-child(1) {
-    background-color: #212121 !important;
-  }
-  section.how__works .container__section .container__how__works .display__how__works .content__how__works:nth-of-type(2) {
-    background-color: #141414 !important;
-  }
-  section.how__works .container__section .container__how__works .display__how__works .content__how__works:nth-child(3) {
-    background-color: #141414 !important;
-  }
-  section.how__works .container__section .container__how__works .display__how__works .content__how__works:nth-child(4) {
-    background-color: #212121 !important;
-  }
-  section.how__works .container__section .container__how__works .display__how__works .content__how__works:nth-of-type(even) {
-    background-color: #212121;
-  }
-  section.how__works .container__section .container__how__works .display__how__works .content__how__works:nth-of-type(even):after {
-    content: "";
-    position: absolute;
-    width: 80px;
-    height: 30px;
-    background-color: #141414;
-    left: 50%;
-    bottom: -28px;
-    transform: translateX(-50%);
-    clip-path: polygon(50% 100%, 0 0, 100% 0);
-    z-index: 1;
-  }
 }
 @media screen and (max-width: 576px) {
   section.how__works .container__section .container__how__works .display__how__works .content__how__works {
@@ -515,7 +496,7 @@ section.testimonials .main .testimonial__content .description p {
 }
 @media screen and (max-width: 576px) {
   section.testimonials .main {
-    padding: 0;
+    padding: 0 2rem;
   }
 }
 section.faq {
