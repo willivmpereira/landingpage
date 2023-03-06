@@ -139,11 +139,6 @@ section.strategies__section .container__section .strategies__title {
   text-align: center;
   margin-bottom: 2.625rem;
 }
-section.strategies__section .container__section .container__strategies {
-  max-width: 1140px;
-  padding: 0 15px;
-  margin: 0 auto;
-}
 section.strategies__section .container__section .container__strategies .display__strategies {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
